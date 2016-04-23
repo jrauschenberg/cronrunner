@@ -24,11 +24,10 @@ var siteChecker = function(site) {
         console.log(site, "has changed!");
         var diff = jsdiff.diffLines(page[site], body);
         diff.forEach(function(part) {
-          if (part.added) chalk.green(part);
-          if (part.removed) chalk.red(part);
-          console.log(part);
+          if (part.added) console.log("Added: " + chalk.green(part));
+          if (part.removed) console.log("Removed: " + chalk.red(part));
         });
-        page[site] = body;
       }
+      page[site] = body;
     });
 }; 
