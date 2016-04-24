@@ -3,7 +3,7 @@ var fetch = require('node-fetch');
 var jsdiff = require('diff');
 var chalk = require('chalk');
 var nodemailer = require('nodemailer');
-var transporter = nodemailer.createTransport('smtps://attempt101c@gmail.com:quokka123@smtp.gmail.com');
+var transporter = nodemailer.createTransport('smtps://user%40gmail.com:pass@smtp.gmail.com');
 
 var page = {};
 var diffs = "";
