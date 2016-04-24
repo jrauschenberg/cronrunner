@@ -36,8 +36,8 @@ var siteChecker = function(site) {
     }).then(function() {
       if (diffs) {
         transporter.sendMail({
-          from: "JohnCron <johncron@johncron.com>",
-          to: "john.rauschenberg@gmail.com",
+          from: "Cronrunner <cronrunner@cronrunner.com>",
+          to: "example@example.com",
           subject: 'Your Daily Page Updates',
           text: diffs,
         }, 
