@@ -5,13 +5,13 @@ A simple node program to check whether there are changes, once per day, to a num
 
 1. Clone the repository
 
-```bash
+	```bash
 git clone https://github.com/jrauschenberg/cronrunner.git
 ```
 
 2. Install dependencies
 
-```bash
+	```bash
 npm install
 ```
 
